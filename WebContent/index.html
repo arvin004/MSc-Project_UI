@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	
+	<script src="js/angular.min.js"></script>
+	<script id="script" src="js/login.js"></script>
+	<script src="js/testScript.js"></script>
+	
+</head>
+<body>
+
+<div >
+
+	<form ng-app="loginApp" ng-controller="loginCtrl" name="loginForm" id="loginForm" novalidate ng-submit="submitForm()" >
+ 		<p>Name : <input type="text" ng-model="username"></p>
+ 		<p>password : <input type="text" ng-model="password"></p>
+ 		
+ 		<button  id="submit" type="submit" ng-disabled="testFormForm.$invalid">Submit</button>
+ 		
+ 	</form>
+</div>
+
+</body>
+
+</html>
